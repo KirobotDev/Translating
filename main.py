@@ -6,7 +6,7 @@ while True:
 
 
     print("1 -> Traduction")
-    print("2 -> sotire")
+    print("2 -> sortir")
 
     menu = input("Choisis : ").lower()
     os.system("cls")
