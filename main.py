@@ -5,6 +5,7 @@ from languages import languages
 
 while True:
 
+    pseudo = os.environ.get("COMPUTERNAME")
 
     print("1 -> Traduction")
     print("2 -> list")
@@ -38,5 +39,5 @@ while True:
         os.system("cls")
    
     elif menu == "3":
-        print("Au-revoir :(")
+        print("Au-revoir", pseudo, "A bientot :)")
         break
