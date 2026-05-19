@@ -7,6 +7,9 @@ while True:
 
     pseudo = os.environ.get("COMPUTERNAME")
 
+    print("")
+    print("Bonjour", pseudo)
+    print("")
     print("1 -> Traduction")
     print("2 -> list")
     print("3 -> sortir")
