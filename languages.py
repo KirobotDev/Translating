@@ -1,0 +1,22 @@
+languages = {
+    'afrikaans': 'af', 'albanian': 'sq', 'amharic': 'am', 'arabic': 'ar',
+    'armenian': 'hy', 'assamese': 'as', 'aymara': 'ay', 'azerbaijani': 'az',
+    'bambara': 'bm', 'basque': 'eu', 'belarusian': 'be', 'bengali': 'bn',
+    'bhojpuri': 'bho', 'bosnian': 'bs', 'bulgarian': 'bg', 'catalan': 'ca',
+    'cebuano': 'ceb', 'chichewa': 'ny', 'chinese (simplified)': 'zh-CN',
+    'chinese (traditional)': 'zh-TW', 'corsican': 'co', 'croatian': 'hr',
+    'czech': 'cs', 'danish': 'da', 'dutch': 'nl', 'english': 'en',
+    'esperanto': 'eo', 'estonian': 'et', 'filipino': 'tl', 'finnish': 'fi',
+    'french': 'fr', 'german': 'de', 'greek': 'el', 'gujarati': 'gu',
+    'haitian creole': 'ht', 'hausa': 'ha', 'hebrew': 'iw', 'hindi': 'hi',
+    'hungarian': 'hu', 'icelandic': 'is', 'indonesian': 'id', 'irish': 'ga',
+    'italian': 'it', 'japanese': 'ja', 'kannada': 'kn', 'kazakh': 'kk',
+    'khmer': 'km', 'korean': 'ko', 'kyrgyz': 'ky', 'lao': 'lo',
+    'latin': 'la', 'latvian': 'lv', 'lithuanian': 'lt', 'malay': 'ms',
+    'malayalam': 'ml', 'maltese': 'mt', 'mongolian': 'mn', 'nepali': 'ne',
+    'norwegian': 'no', 'polish': 'pl', 'portuguese': 'pt', 'punjabi': 'pa',
+    'romanian': 'ro', 'russian': 'ru', 'sinhala': 'si', 'slovak': 'sk',
+    'slovenian': 'sl', 'somali': 'so', 'spanish': 'es', 'swahili': 'sw',
+    'swedish': 'sv', 'tamil': 'ta', 'telugu': 'te', 'thai': 'th',
+    'turkish': 'tr', 'ukrainian': 'uk', 'urdu': 'ur', 'vietnamese': 'vi'
+}
