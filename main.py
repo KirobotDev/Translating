@@ -1,5 +1,4 @@
 import time
-from tkinter import Menu
 from deep_translator import GoogleTranslator
 import os
 
