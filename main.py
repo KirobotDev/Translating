@@ -2,6 +2,13 @@ import time
 from deep_translator import GoogleTranslator
 import os
 from languages import languages
+from openai import OpenAI
+
+
+client = OpenAI(
+    api_key="",
+    base_url="https://api.groq.com/openai/v1",
+)
 
 while True:
 
@@ -12,7 +19,8 @@ while True:
     print("")
     print("1 -> Traduction")
     print("2 -> list")
-    print("3 -> sortir")
+    print("3 -> Ai Chat")
+    print("4 -> sortir")
 
     menu = input("Choisis : ").lower()
     print("Ton Choix est ->", menu, "Le menue va ètre clear pour laisser place a ton choix dans 2s")
@@ -36,11 +44,33 @@ while True:
         #     break
         # else:
          #     print("Commands inconnue désolé, choisis (Continuer) / (Sortir), sont les seuls commands disponible ;)")
+         
     elif menu == "2":
         print(languages)
         time.sleep(5)
         os.system("cls")
-   
     elif menu == "3":
+        for i in range(5):
+            chat = input("Parle moi : ")
+        
+            response = client.responses.create(
+             model="llama-3.3-70b-versatile",
+            input=[
+             {
+                 "role": "system",
+                 "content": "Tu es une IA empathique. Tu réponds avec 1 à 2 phrases maximum. Tu es chaleureux et rassurant. Emojis autorisés."
+              },
+              {
+                   "role": "user",
+                   "content": chat
+                }
+           ],
+               max_output_tokens=80
+         )
+        
+            print(response.output_text)
+
+
+    elif menu == "4":
         print("Au-revoir", pseudo, "A bientot :)")
         break
