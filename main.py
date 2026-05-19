@@ -1,14 +1,18 @@
 import time
 from deep_translator import GoogleTranslator
 import os
+from languages import languages
 
 while True:
 
 
     print("1 -> Traduction")
-    print("2 -> sortir")
+    print("2 -> list")
+    print("3 -> sortir")
 
     menu = input("Choisis : ").lower()
+    print("Ton Choix est ->", menu, "Le menue va ètre clear pour laisser place a ton choix dans 2s")
+    time.sleep(2)
     os.system("cls")
 
     if menu == "1":
@@ -29,5 +33,10 @@ while True:
         # else:
          #     print("Commands inconnue désolé, choisis (Continuer) / (Sortir), sont les seuls commands disponible ;)")
     elif menu == "2":
+        print(languages)
+        time.sleep(5)
+        os.system("cls")
+   
+    elif menu == "3":
         print("Au-revoir :(")
         break
